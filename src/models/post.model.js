@@ -3,10 +3,6 @@ const mongoose = require('mongoose');
 const Post = mongoose.model(
     "Post",
     new mongoose.Schema({
-        user: {
-            type: mongoose.Schema.Types.ObjectId,
-            ref: "User"
-        },
         category: {
             type: mongoose.Schema.Types.ObjectId,
             ref: "Category"
